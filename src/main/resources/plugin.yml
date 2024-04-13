@@ -1,0 +1,7 @@
+main: de.phillip.spigot.lobbysystem.LobbySystem
+name: LobbySystem
+version: 1.0
+author: Phillip
+
+commands:
+  setspawn:
