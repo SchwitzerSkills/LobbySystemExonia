@@ -1,6 +1,7 @@
 package de.phillip.spigot.lobbysystem.listeners;
 
 import de.phillip.spigot.lobbysystem.LobbySystem;
+import org.bukkit.GameMode;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -23,6 +24,10 @@ public class JoinListener implements Listener {
         p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_PLING, 10, 10);
 
         e.setJoinMessage("§8[§a+§8] §6" + p.getName());
+
+        LobbySystem.getInstance().getItemsUtil().setDefaultItems(p);
+
+        p.setGameMode(GameMode.ADVENTURE);
     }
 
     @EventHandler

@@ -2,6 +2,8 @@ main: de.phillip.spigot.lobbysystem.LobbySystem
 name: LobbySystem
 version: 1.0
 author: Phillip
+api-version: 1.20
 
 commands:
   setspawn:
+  build:
